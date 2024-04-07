@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background-image: url("../assets/images/background/frontier1.png");
+    background-size: cover;
+    cursor: default;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(174, 96, 135, 0);
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .leftcolumn {   
+    float: left;
+    width: 21%;
+    background-color: rgba(225, 225, 225, 0.5);
+    margin: 15px 5px;
+    border-radius: 10px;
+    clear: left;
+  }
+  
+  .rightcolumn {
+    float: right;
+    width: 75%;
+    background-color: rgba(225, 225, 225, 0.6);
+    padding-left: 10px;
+    margin: 10px 0;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+
+  .leftcolumn, .rightcolumn {
+    border: 1px solid black;
+  }
+
+  #calendar {
+    overflow: auto;
+    margin: 0 auto;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  .carousel-inner {
+    /* height: 400px; */
+    background:  rgba(225, 225, 225, 0.5);
+  }
+  
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .fakeimg {
+    background-color: rgba(225, 225, 225, 0.2);
+    width: 100%;
+    padding: 20px;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:  rgba(225, 225, 225, 0.2);
+  }
+  
+  #addEventForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #addEventModal {
+    position: relative;
+  }
+  
+  #addEventForm label, #addEventForm input, #addEventForm button {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(225, 225, 225, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    } 
+  }

@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function() {
   var topnav = document.querySelector('.topnav');
   var scrollPosition = window.pageYOffset;
-  var maxOpacityChangeDistance = 500; // 你可以根据需要调整这个值
+  var maxOpacityChangeDistance = 500; 
 
   var opacity = 0.1 + (scrollPosition / maxOpacityChangeDistance) * (1 - 0.1);
   opacity = Math.min(opacity, 1); // 确保透明度不超过1
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   calendar.render();
 
-  // 使用 fetch API 从你的博客获取文章数据
+  // 使用 fetch API 从博客获取文章数据
   fetch('https://griedzx.github.io/index.json')
     .then(response => response.json())
     .then(articles => {

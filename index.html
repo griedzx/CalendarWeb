@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+  <!-- https://blog.csdn.net/JACK_SUJAVA/article/details/124411678 -->
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="a calendar to use recording some events not merely including soccer matches">
@@ -8,16 +10,20 @@
   <meta name="author" content="Zixi Dai">
   <title>events calendar</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
   <script src="js/main.js"></script>
-
   <!-- 引入jQuery和Bootstrap -->
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
-  
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/static/js/sakura-less.js"></script>
 </head>
 <body>
+  <script type="text/javascript">
+    sakura('sakura', 'fall');
+  </script>
   <header>
     <div class="header">
       <h1>FullCalendar</h1>
@@ -107,26 +113,5 @@
   <footer>
     <p class="footer">Copyright &copy; 2024 Zixi Dai | CC BY-NC 4.0</p>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script>
-  $.ajax({
-      url: './php/photo_in_turn.php', //php文件的路径
-      dataType: 'json',
-      success: function(data) {
-          // data  图片文件名
-          // 图片轮播
-          var $carouselInner = $('.carousel-inner');
-          data.forEach(function(image, index) {
-              var itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
-              $carouselInner.append(
-                  '<div class="' + itemClass + '">' +
-                  '<img src="assets/images/김지원/' + image + '" class="d-block w-100">' +
-                  '</div>'
-              );
-          });
-      }
-  });
-  </script>
 </body>
 </html>

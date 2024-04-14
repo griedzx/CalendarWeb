@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+    body {
+        padding: 0; 
+        margin: 0; 
+        font-family: "Cursive";
+        background-image: url("../assets/images/background/frontier.png")
+    }
+
+    .con_title {
+        background-color: #8EC172;
+        width: auto;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+        color:#FFF;
+        line-height: 56px;
+    }
+
+    .box {
+        width: 100%;
+        height: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .box img {
+        width: 500px;
+        height: 550px;
+    }
+    
+    .register {
+        width: 400px;
+        height: 500px;
+        background-color: #E0E0EF;
+        margin-top: 50px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    
+    .register h1 {
+        text-align: center;
+        line-height: 80px;
+    }
+    
+    .register span {
+        font-size: 20px;
+    }
+    
+    .register_r {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 60px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .register_r input {
+        width: 300px;
+        height: 35px;
+        outline: none;
+        padding-left: 10px;
+        border: none;
+    }
+    
+    .register_e {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 60px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .register_e input {
+        width: 140px;
+        height: 35px;
+        outline: none;
+        padding-left: 10px;
+        border: none;
+        margin-right: 30px;
+    }
+    
+    .register_g {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+    }
+    
+    .register_g input {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    
+    }
+    
+    .register_i {
+        background-color: #298DFB;
+        width: 84%;
+        line-height: 50px;
+        color: #fff;
+        margin-top: 5%;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 8%;
+        border: 1px #E4E7ED ridge;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    #c1 {
+        vertical-align: middle;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin-right: 10px;
+    }

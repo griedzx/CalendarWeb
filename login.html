@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+    </head>
+
+    <body>
+        <div class="box">
+            <!-- <img src="./assets/images/background/astronaut.jpg" alt="", > -->
+            <div class="register">
+                <h1>登录</h1>
+                <form action="login.php" method="post" enctype="multipart/form-data" name="" id="">
+                <div class="register_r">
+                    <span>账号:</span>
+                    <input type="text" placeholder="请输入您的账号">
+                </div>
+                <div class="register_r">
+                    <span>密码:</span>
+                    <input type="password" placeholder="请输入您的密码" >
+                </div>
+                <div class="register_e">
+                    <span>验证码:</span>
+                    <input type="text" placeholder="请输入验证码验证">
+                    <canvas id="c1" width="90" height="35" style="border:1px solid black"></canvas>
+                    <span> </span>
+                </div>
+                <div class="register_g">
+                    <input type="checkbox">
+                    <span>记住账号密码</span>
+                </div>
+                <button class="register_i">登录</button>
+                </form>
+            </div>
+        </div>    
+    </body>
+</html>

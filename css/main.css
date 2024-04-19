@@ -80,7 +80,6 @@
   }
     
   .carousel-inner {
-    /* height: 400px; */
     background:  rgba(225, 225, 225, 0.5);
   }
   
@@ -102,24 +101,6 @@
     align-items: center;
     padding: 20px;
     background-color:  rgba(225, 225, 225, 0.2);
-  }
-  
-  #addEventForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  #addEventModal {
-    position: relative;
-  }
-  
-  #addEventForm label, #addEventForm input, #addEventForm button {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-    max-width: 300px;
   }
   
   .card {

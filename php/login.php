@@ -47,7 +47,9 @@ if ($result->num_rows == 0) {
 }
 
 $post_username = $_POST['username'];
+$post_username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $post_password = $_POST['password'];
+$post_password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
 // 从数据库中检索用户的账号和密码
 $sql = "SELECT password FROM Users WHERE username = ?";

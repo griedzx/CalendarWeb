@@ -46,6 +46,7 @@ if ($result->num_rows == 0) {
   }
 }
 
+#filter the input 
 $post_username = $_POST['username'];
 $post_username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $post_password = $_POST['password'];
